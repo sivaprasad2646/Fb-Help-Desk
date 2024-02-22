@@ -1,0 +1,41 @@
+.conversation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 15px;
+  vertical-align: center;
+  border-bottom: 1px solid #e4e4e4;
+  gap: 10px;
+}
+.conversation-item[active="selected"] {
+  background-color: #e4e4e4;
+}
+.conversation-top {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.conversation-title-box {
+  display: flex;
+}
+.conversation-top > p {
+  align-self: flex-start;
+  font-size: 16px;
+}
+.title {
+  font-weight: 600;
+  line-height: 24px;
+}
+.caption1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.conversation-bottom-details .subject {
+  font-weight: 500;
+  line-height: 24px;
+}
+.conversation-bottom-details .caption2 {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,35 @@
+.input-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 3px;
+  margin: 10px auto;
+}
+.input-container label {
+  font-weight: 500;
+}
+.input-container input {
+  padding: 10px 16px;
+  border: 2px solid #e4e4e4;
+  border-radius: 6px;
+  outline: none;
+  transition: .2s ease-in-out border;
+}
+.input-container input:focus {
+  border: 2px solid grey;
+}
+.input-container p {
+  color: #e80000;
+}
+.checkbox-input {
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 10px;
+  user-select: none;
+}
+.checkbox-input label {
+  font-weight: 400;
+}
+.checkbox-input input {
+  width: 16px;
+}

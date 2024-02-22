@@ -1,0 +1,7 @@
+.box-container h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.box-container a {
+  color: rgb(var(--background-rgb));
+}

@@ -1,0 +1,141 @@
+.individual-chat {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  background-color: #f0f0f0;
+  border-right: 1px solid #e4e4e4;
+}
+.chat-container {
+  flex-basis: 70%;
+  min-width: 360px;
+  border-right: 1px solid #e4e4e4;
+}
+.profile-container {
+  flex-basis: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile-card {
+  background: white;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
+  gap: 5px;
+}
+.details-card {
+  background-color: rgb(243, 250, 255);
+  height: 100%;
+  padding: 10px;
+}
+.avatar-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.online-tag-2 {
+  width: 8px;
+  height: 8px;
+  background-color: grey;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px grey;
+}
+.flex-box {
+  display: flex;
+  gap: 5px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.online-status {
+  color: grey;
+  font-size: 0.8rem;
+}
+.online-tag-2[online="online"] {
+  background-color: green;
+  box-shadow: 0px 0px 5px green;
+}
+.details-container {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.detail-item .detail {
+  font-weight: 500;
+}
+.details-container h3 {
+  margin: 0;
+  font-weight: 500;
+}
+.details-container a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(var(--background-rgb));
+}
+
+.chat-container {
+  height: calc(100vh - 69px);
+  width: 100%;
+  position: relative;
+}
+.msg-input-container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  height: 55px;
+}
+.msgs-container {
+  height: calc(100vh - 124px);
+  padding: 10px;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  max-width: 60%;
+  display: flex;
+  gap: 10px;
+  margin : 10px 0px;
+}
+.msg img {
+  align-self: flex-end;
+}
+.msg-receiver {
+  align-self: flex-start;
+}
+.msg-sender {
+  align-self: flex-end;
+}
+.msg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.msg-item {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px #e4e4e4;
+}
+.msg-caption {
+  font-size: 0.75rem;
+  font-weight: 500;
+}

@@ -1,0 +1,81 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 32, 76, 148;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.centered-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  min-width: 300px;
+  width: 100%;
+  max-width: 440px;
+  /* min-height: 600px; */
+  background-color: white;
+  border-radius: 24px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out width, 0.5s ease-in-out border-radius,
+    0.5s ease-in-out height, 0.5s ease-in-out max-width,
+    0.5s ease-in-out max-height;
+}
+@media screen and (max-width: 560px) {
+  .box-container {
+    border-radius: 0px;
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+  }
+}
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 8px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.6);
+  width: 100%;
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.error p {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+.buttons {
+  color: white;
+  width: 100%;
+  min-width: 100px;
+  min-height: 48px;
+  border-radius: 4px;
+  margin: 5px 0px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.buttons[variant="contained"] {
+  background: rgb(var(--background-rgb));
+  border: none;
+}
+.buttons[variant="outline"] {
+  border: 1px solid rgb(var(--background-rgb));
+  color: rgb(var(--background-rgb));
+}
+.buttons[color="error"] {
+  background-color: rgba(245, 0, 0, 0.8);
+  color: white;
+}
+.buttons svg {
+  width: 16px;
+  height: 16px;
+  fill: grey;
+}
+
+.buttons[color="neutral"] {
+  background-color: white;
+  border: 1px solid grey;
+  color: black;
+}
+
+.buttons[color="neutral"] svg {
+  fill: black;
+}
